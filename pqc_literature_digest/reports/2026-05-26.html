@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; line-height: 1.55; color: #202124; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: 24px; margin-bottom: 4px; }
+    h2 { font-size: 18px; margin-bottom: 4px; }
+    h3 { font-size: 14px; margin-bottom: 2px; }
+    a { color: #0b57d0; }
+    .paper { border-top: 1px solid #d9dce0; padding: 18px 0; }
+    .meta, .authors { color: #5f6368; font-size: 13px; }
+    .label { display: inline-block; margin: 2px 4px 2px 0; padding: 2px 7px; border: 1px solid #ccd2d8; border-radius: 999px; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daily PQC Literature Digest</h1>
+    <p class="meta">2026-05-26 | top 10 papers | bilingual digest</p>
+    
+            <article class="paper">
+              <h2>1. <a href="https://eprint.iacr.org/2026/1041">CoNAN: A Structure-Aware Framework for Lattice Cryptanalysis</a></h2>
+              <p class="meta">IACR ePrint | Sat, 23 May 2026 13:22:21 +0000 |  | score 23</p>
+              <p class="authors"></p>
+              <p><span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>CoNAN是一个将代数结构融入格安全估计的框架，通过代数诱导的同态导出低维格表示，从而复现了针对NTRU Composite、BQTRU和多变量LWE的已知攻击，并揭示非交换群环上的结构化LWE安全强度至少降低60比特。该工作为未来基于结构化格的方案提供了安全的参数选择指导。</p>
+              <h3>English Summary</h3>
+              <p>CoNAN is a framework that incorporates algebraic structure into lattice security estimation, exploiting algebra-induced homomorphisms to derive lower-dimensional lattice representations. It reproduces known attacks on NTRU Composite, BQTRU, and multivariate LWE, and reveals that structured LWE over noncommutative group rings can degrade security by at least 60 bits. The work guides secure parameter selection for future structured lattice-based schemes.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>本论文直接影响了结构化格基PQC方案的安全性分析，表明代数结构可显著降低有效安全强度，对NTRU和基于LWE的提案的参数选择至关重要。</p>
+              <p>This paper directly impacts the security analysis of structured lattice-based PQC schemes by showing that algebraic structure can significantly reduce effective security, which is critical for parameter selection in NTRU and LWE-based proposals.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>2. <a href="https://eprint.iacr.org/2026/1037">On Publicly Verifiable Tokens in Group Signatures with Message-Dependent Opening</a></h2>
+              <p class="meta">IACR ePrint | Sat, 23 May 2026 01:34:24 +0000 |  | score 19</p>
+              <p class="authors"></p>
+              <p><span class='label'>密码学</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本文正式定义了消息相关打开群签名（GS-MDO）中令牌的公开可验证性，明确了令牌可以在不依赖打开者私钥的情况下被公开验证其有效性的属性。建立了将令牌作为签名验证与用于打开验证之间的关系，并证明现有的基于配对和基于格的GS-MDO方案满足这一定义。此外，讨论了公开可验证令牌如何实现管理员的问责性。</p>
+              <h3>English Summary</h3>
+              <p>This paper formally defines public verifiability for tokens in group signatures with message-dependent opening (GS-MDO), clarifying the property that tokens can be publicly verified as valid for opening without the opener&#x27;s secret key. It establishes a relationship between verifying a token as a signature and verifying its use for opening, and shows that existing pairing-based and lattice-based GS-MDO schemes satisfy this definition. Additionally, it discusses how publicly verifiable tokens enable admitter accountability.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>本文与后量子密码相关，因为分析中包含了基于格的GS-MDO方案（Libert等2016），该方案是后量子的。公开可验证性和管理员问责性的形式化定义可指导后量子GS-MDO构造的设计。</p>
+              <p>This paper is relevant to PQC as its analysis includes a lattice-based GS-MDO scheme (Libert et al. 2016), which is post-quantum. The formalization of public verifiability and admitter accountability can guide the design of post-quantum GS-MDO constructions.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>3. <a href="https://doi.org/10.1016/j.actaastro.2026.04.041">Post-quantum cryptography for space systems: Algorithms, implementation, and design constraints—A systematic survey</a></h2>
+              <p class="meta">Crossref | 2026-9 | Acta Astronautica | score 9</p>
+              <p class="authors">Hyunmin Kim</p>
+              <p><span class='label'>密码学</span> <span class='label'>implementation</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本系统综述探讨了后量子密码学在空间系统中的应用，涵盖了算法、实现挑战和空间环境特有的设计约束。它分析了各种后量子密码候选方案在资源受限卫星平台上的适用性，考虑了计算开销、内存占用和抗辐射等关键因素。论文全面概述了后量子密码在空间领域的应用现状，突出了进展和未解决的问题。</p>
+              <h3>English Summary</h3>
+              <p>This systematic survey examines the application of post-quantum cryptography (PQC) in space systems, covering algorithms, implementation challenges, and design constraints unique to space environments. It analyzes the suitability of various PQC candidates for resource-constrained satellite platforms, considering factors like computational overhead, memory footprint, and radiation tolerance. The paper provides a comprehensive overview of the current state of PQC adoption in space, highlighting both progress and open research problems.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>高度相关：本综述直接探讨了后量子密码学与空间系统的交叉领域，这是一个具有独特约束的狭窄但重要的应用领域。它提供了算法、实现和设计考量的全景，对研究后量子密码在资源受限环境中部署的研究人员极具价值。</p>
+              <p>High relevance: This survey directly addresses the intersection of PQC and space systems, a niche but important application area with unique constraints. It provides a landscape of algorithms, implementations, and design considerations, making it valuable for researchers interested in PQC deployment in resource-limited environments.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>4. <a href="https://eprint.iacr.org/2026/1045">Ciphertext-Updatable Attribute-Based and Predicate Encryption from Lattices</a></h2>
+              <p class="meta">IACR ePrint | Sun, 24 May 2026 08:18:18 +0000 |  | score 8</p>
+              <p class="authors"></p>
+              <p><span class='label'>密码学</span> <span class='label'>theory</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>我们提出了可更新密文的属性基加密（CU-ABE）和谓词加密（CU-PE），允许通过主密钥持有者生成的令牌对密文进行受控更新。我们利用基于LWE的内积函数加密提供了从ABE到CU-ABE的通用转换，并结合可锁定混淆实现CU-PE。针对有界深度电路的多跳和无限令牌扩展方案依赖于规避LWE假设。</p>
+              <h3>English Summary</h3>
+              <p>We introduce ciphertext-updatable attribute-based encryption (CU-ABE) and predicate encryption (CU-PE), allowing controlled ciphertext updates via tokens from the master secret key holder. We provide a generic ABE-to-CU-ABE transformation using inner-product functional encryption from LWE, and combine with lockable obfuscation for CU-PE. Extensions to multi-hop and unbounded token settings for bounded-depth circuits rely on the evasive LWE assumption.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>高度相关；基于格假设（LWE）构建了可更新密文的ABE和PE，提供抗量子安全性。</p>
+              <p>Highly relevant; constructs ciphertext-updatable ABE and PE from lattice assumptions (LWE), offering post-quantum security.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>5. <a href="https://pubmed.ncbi.nlm.nih.gov/41775745/">Post-quantum cryptographic authentication protocol for industrial IoT using lattice-based cryptography.</a></h2>
+              <p class="meta">PubMed | 2026 Mar 3 | Scientific reports | score 8</p>
+              <p class="authors">Shahid AB, Mansoor K, Bangash YA, Iqbal W, Mussiraliyeva S</p>
+              <p><span class='label'>密码学</span> <span class='label'>protocol</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本文提出了一种基于格密码的工业物联网（IIoT）后量子认证协议。该协议旨在抵御量子攻击，同时保持对资源受限的IIoT设备的高效性。它可能利用学习误差（LWE）或环学习误差（ring-LWE）问题的困难性来实现密钥交换和认证。</p>
+              <h3>English Summary</h3>
+              <p>This paper proposes a post-quantum authentication protocol for Industrial Internet of Things (IIoT) using lattice-based cryptography. The protocol aims to provide security against quantum attacks while maintaining efficiency for resource-constrained IIoT devices. It likely leverages the hardness of learning with errors (LWE) or ring-LWE problems for key exchange and authentication.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>该论文与PQC研究高度相关，展示了格密码在IIoT认证中的实际应用，该场景需要同时保证安全性和效率。它为资源受限环境下的协议设计和PQC集成提供了见解。</p>
+              <p>This paper is highly relevant to PQC research as it demonstrates a practical application of lattice-based cryptography for authentication in IIoT, a scenario requiring both security and efficiency. It provides insights into protocol design and integration of PQC in resource-constrained environments.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>6. <a href="http://arxiv.org/abs/2605.25367v1">Architectural Limits of Cloud TPUs in Finite-Field Cryptography</a></h2>
+              <p class="meta">arXiv | 2026-05-25T02:46:02Z |  | score 7</p>
+              <p class="authors">Hung Dang, Xuan Phu Dang, Tue Nguyen</p>
+              <p><span class='label'>密码学</span> <span class='label'>NTT</span></p>
+              <h3>中文摘要</h3>
+              <p>本文实证评估了谷歌云TPU在有限域密码学中相比GPU的成本效率缺陷，发现因缺少宽整数ALU和空间未充分利用导致4693倍至6908倍的性能差距。作者提出了一种测量工具，将NTT操作映射为矩阵形式，实现了高K维占用率，但存在M维利用不足和Montgomery归约停顿问题。结果揭示了AI优化的脉动阵列与精确有限域算术需求之间的根本性架构不匹配，为未来密码学硬件设计提供了参考。</p>
+              <h3>English Summary</h3>
+              <p>This paper empirically evaluates the cost-efficiency deficit of Google Cloud TPUs compared to GPUs for finite-field cryptography, finding a 4,693x to 6,908x slowdown due to missing wide-integer ALUs and spatial underutilization. The authors introduce a measurement vehicle that maps NTT operations onto matrix forms, achieving high K-dimension occupancy but suffering from M-dimension under-utilization and Montgomery reduction stalls. The results highlight fundamental architectural mismatches between AI-optimized systolic arrays and the requirements of exact finite-field arithmetic, informing future hardware design for cryptographic workloads.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>与后量子密码学高度相关，因为有限域算术（如用于NTT）是格基后量子方案的核心组成部分，了解TPU上的硬件瓶颈有助于为后量子密码加速实现高效实现和协同设计。</p>
+              <p>High relevance to post-quantum cryptography (PQC) because finite-field arithmetic (e.g., for NTT) is a core component of lattice-based PQC schemes, and understanding hardware bottlenecks on TPUs informs efficient implementation and co-design for PQC acceleration.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>7. <a href="https://pubmed.ncbi.nlm.nih.gov/42139255/">Design and evaluation of a resilient IBN architecture: Integrating post-quantum cryptography with adaptive threat detection using machine learning.</a></h2>
+              <p class="meta">PubMed | 2026 | PloS one | score 6</p>
+              <p class="authors">Roy KS, Singh S, Goswami H, Panchal S, Hassan SM</p>
+              <p><span class='label'>密码学</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本文提出了一种弹性意图驱动网络（IBN）架构，集成了后量子密码学（PQC）以抵御未来量子威胁。该架构将PQC与基于机器学习的自适应威胁检测相结合，动态识别并缓解攻击。研究评估了集成系统的性能与安全性，分析了密码开销与检测精度之间的权衡。</p>
+              <h3>English Summary</h3>
+              <p>This paper proposes a resilient Intent-Based Networking (IBN) architecture that integrates post-quantum cryptography (PQC) to secure network communications against future quantum threats. It combines PQC with adaptive threat detection using machine learning to dynamically identify and mitigate attacks. The work evaluates the performance and security of the integrated system, highlighting trade-offs between cryptographic overhead and detection accuracy.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>与PQC直接相关，因为本文设计并评估了一个将后量子密码算法集成到网络安全框架中的系统。</p>
+              <p>Directly relevant to PQC as it designs and evaluates a system that integrates PQC algorithms into a network security framework.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>8. <a href="https://pubmed.ncbi.nlm.nih.gov/41977806/">A Kyber-Based Lightweight Cloud-Assisted Authentication Scheme for Medical IoT.</a></h2>
+              <p class="meta">PubMed | 2026 Mar 24 | Sensors (Basel, Switzerland) | score 6</p>
+              <p class="authors">Yan H, Wang Z, Lin L, Sun J, Liu S</p>
+              <p><span class='label'>protocol</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本文提出了一种基于Kyber后量子密钥封装机制的轻量级云辅助医疗物联网认证方案。该方案旨在保护医疗设备与云服务器之间的通信免受量子攻击，同时保持较低的计算开销。通过利用Kyber的高效性，该方案实现了对资源受限物联网设备的实用安全性。</p>
+              <h3>English Summary</h3>
+              <p>This paper proposes a lightweight cloud-assisted authentication scheme for Medical Internet of Things (IoT) based on the Kyber post-quantum key encapsulation mechanism. It aims to secure communication between medical devices and cloud servers against quantum attacks while maintaining low computational overhead. The scheme leverages Kyber&#x27;s efficiency to achieve practical security for resource-constrained IoT devices.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>直接应用Kyber（NIST后量子密码标准）于物联网认证，展示了后量子密码在医疗领域的实用部署。</p>
+              <p>Directly applies Kyber (a NIST PQC standard) to IoT authentication, demonstrating practical deployment of post-quantum cryptography in healthcare.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>9. <a href="https://pubmed.ncbi.nlm.nih.gov/41720849/">A quantum resilient deepfake detection framework using enhanced resnext and post quantum cryptography defence.</a></h2>
+              <p class="meta">PubMed | 2026 Feb 20 | Scientific reports | score 6</p>
+              <p class="authors">Shreeya KN, Subburaj B, Saketh KSG, Padmavathy TV, Alphonse S, Subramanian G</p>
+              <p><span class='label'>密码学</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本文提出了一种深度伪造检测框架，将增强型ResNeXt架构与后量子密码（PQC）相结合，以抵御量子攻击。该模型利用PQC安全传输和存储检测结果，使其能够抵御具备量子能力的对手的对抗性操纵。实验结果表明，该方法在保持高检测精度的同时，具有对量子威胁的鲁棒性。</p>
+              <h3>English Summary</h3>
+              <p>This paper proposes a deepfake detection framework that integrates an enhanced ResNeXt architecture with post-quantum cryptography (PQC) to ensure security against quantum attacks. The model uses PQC for secure transmission and storage of detection results, making it resilient to adversarial manipulation by quantum-capable adversaries. Experimental results demonstrate high detection accuracy while maintaining robustness against quantum threats.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>本文直接将后量子密码应用于深度伪造检测系统的安全保护，应对量子计算机对传统密码方法的威胁。它为PQC在人工智能安全中的实际应用提供了案例，对研究量子弹性系统的研究者具有参考价值。</p>
+              <p>This paper directly applies post-quantum cryptography to secure a deepfake detection system, addressing the threat quantum computers pose to traditional cryptographic methods. It demonstrates a practical use case for PQC in AI security, relevant for researchers working on quantum-resilient systems.</p>
+            </article>
+            
+
+            <article class="paper">
+              <h2>10. <a href="https://pubmed.ncbi.nlm.nih.gov/42002584/">Enhancing IoT security through cloud-assisted post-quantum authentication: a case study with UOV signatures.</a></h2>
+              <p class="meta">PubMed | 2026 Apr 19 | Scientific reports | score 3</p>
+              <p class="authors">Maned VR, Rath S, Ramalingam J, Kuppusamy L</p>
+              <p><span class='label'>密码学</span> <span class='label'>protocol</span> <span class='label'>PQC</span></p>
+              <h3>中文摘要</h3>
+              <p>本文提出了一种利用UOV（不平衡油醋）数字签名的云辅助物联网设备认证框架，UOV是一种后量子密码原语。它展示了如何通过将重计算任务卸载到云，在资源受限的物联网环境中实现高效、抗量子的认证。案例研究包括性能评估和安全性分析，强调了签名大小与验证速度之间的权衡。</p>
+              <h3>English Summary</h3>
+              <p>This paper presents a cloud-assisted authentication framework for IoT devices using UOV (Unbalanced Oil and Vinegar) digital signatures, a post-quantum cryptographic primitive. It demonstrates how UOV signatures can provide efficient, quantum-resistant authentication in resource-constrained IoT environments by offloading heavy computations to the cloud. The case study includes performance evaluation and security analysis, highlighting the trade-offs between signature size and verification speed.</p>
+              <h3>相关性 / Relevance</h3>
+              <p>本文直接相关于PQC研究，因为它探讨了多变量签名方案（UOV）在物联网中的实际部署，这是一个关键的应用领域。它提供了将PQC集成到现实系统中的挑战的见解，包括性能权衡和云辅助方法。</p>
+              <p>This paper is directly relevant to PQC research as it addresses the practical deployment of a multivariate signature scheme (UOV) in IoT, a key application domain. It provides insights into the challenges of integrating PQC into real-world systems, including performance trade-offs and cloud-assisted approaches.</p>
+            </article>
+            
+  </div>
+</body>
+</html>

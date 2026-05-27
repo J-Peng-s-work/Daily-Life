@@ -1,0 +1,57 @@
+{
+  "digest": {
+    "title": "Daily World Digest",
+    "language": "zh-CN",
+    "timezone": "Europe/Dublin",
+    "max_events": 12,
+    "history_days": 21,
+    "min_sources_per_event": 1
+  },
+  "email": {
+    "from": "pengjin250@gmail.com",
+    "to": ["126105287@umail.ucc.ie"],
+    "subject_prefix": "[World Digest]"
+  },
+  "feeds": [
+    {
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "region": "world"
+    },
+    {
+      "name": "The Guardian World",
+      "url": "https://www.theguardian.com/world/rss",
+      "region": "world"
+    },
+    {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "region": "world"
+    },
+    {
+      "name": "NPR World",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "region": "world"
+    },
+    {
+      "name": "Google News World",
+      "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-IE&gl=IE&ceid=IE:en",
+      "region": "world"
+    },
+    {
+      "name": "Google News United States",
+      "url": "https://news.google.com/rss/headlines/section/topic/NATION?hl=en-US&gl=US&ceid=US:en",
+      "region": "us"
+    },
+    {
+      "name": "Google News Business",
+      "url": "https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=en-IE&gl=IE&ceid=IE:en",
+      "region": "business"
+    },
+    {
+      "name": "Google News Science",
+      "url": "https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=en-IE&gl=IE&ceid=IE:en",
+      "region": "science"
+    }
+  ]
+}

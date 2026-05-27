@@ -1,0 +1,12 @@
+Daily World Digest Test - 2026-05-27
+
+1. Regional leaders push ceasefire proposal in renewed talks
+前因后果：目前可见的背景是：The latest proposal follows earlier failed rounds and rising concern about civilians.
+来源：
+- Sample Feed, 2026-05-27: Regional leaders push ceasefire proposal in renewed talks (https://example.com/ceasefire-proposal)
+- Sample Feed, 2026-05-27: Ceasefire talks resume as regional leaders meet (https://example.com/ceasefire-talks)
+
+2. Central bank signals slower rate cuts
+前因后果：目前可见的背景是：Markets adjusted after policymakers warned inflation remained sticky.
+来源：
+- Sample Feed, 2026-05-27: Central bank signals slower rate cuts (https://example.com/rate-cuts)

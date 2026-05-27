@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Sample World Feed</title>
+    <item>
+      <title>Ceasefire talks resume as regional leaders meet</title>
+      <link>https://example.com/ceasefire-talks</link>
+      <description>Negotiators returned to talks after weeks of pressure from regional governments and aid groups.</description>
+      <pubDate>Wed, 27 May 2026 07:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Regional leaders push ceasefire proposal in renewed talks</title>
+      <link>https://example.com/ceasefire-proposal</link>
+      <description>The latest proposal follows earlier failed rounds and rising concern about civilians.</description>
+      <pubDate>Wed, 27 May 2026 08:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Central bank signals slower rate cuts</title>
+      <link>https://example.com/rate-cuts</link>
+      <description>Markets adjusted after policymakers warned inflation remained sticky.</description>
+      <pubDate>Wed, 27 May 2026 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,138 @@
+{
+  "digest": {
+    "title": "Daily PQC Literature Digest",
+    "timezone": "Europe/Dublin",
+    "max_papers": 10,
+    "lookback_days": 2,
+    "output_dir": "reports",
+    "state_file": "seen_papers.json"
+  },
+  "profile": {
+    "primary_keywords": [
+      "post-quantum cryptography",
+      "post quantum cryptography",
+      "PQC",
+      "lattice cryptography",
+      "lattice-based",
+      "module-LWE",
+      "module-SIS",
+      "ring-LWE",
+      "Kyber",
+      "ML-KEM",
+      "Dilithium",
+      "ML-DSA",
+      "Falcon",
+      "SPHINCS+",
+      "BIKE",
+      "HQC",
+      "code-based cryptography",
+      "isogeny",
+      "hash-based signature",
+      "NTT",
+      "number theoretic transform",
+      "polynomial multiplication"
+    ],
+    "secondary_keywords": [
+      "protocol",
+      "implementation",
+      "constant-time",
+      "side-channel",
+      "masking",
+      "hardware",
+      "software",
+      "proof",
+      "security reduction",
+      "cryptanalysis",
+      "KEM",
+      "signature"
+    ],
+    "high_quality_venues": [
+      "CRYPTO",
+      "EUROCRYPT",
+      "ASIACRYPT",
+      "TCC",
+      "PKC",
+      "CHES",
+      "FSE",
+      "IACR Communications in Cryptology",
+      "IACR Transactions on Cryptographic Hardware and Embedded Systems",
+      "IACR Transactions on Symmetric Cryptology",
+      "ACM CCS",
+      "IEEE S&P",
+      "USENIX Security",
+      "NDSS",
+      "PQCrypto"
+    ],
+    "labels": {
+      "密码学": ["cryptography", "cryptographic", "crypto", "encryption", "signature", "KEM"],
+      "protocol": ["protocol", "key exchange", "authentication", "AKE", "TLS", "MPC", "secure computation"],
+      "implementation": ["implementation", "constant-time", "software", "hardware", "FPGA", "AVX", "ARM", "side-channel", "masking"],
+      "theory": ["proof", "security reduction", "assumption", "lower bound", "indistinguishability", "random oracle", "QROM"],
+      "NTT": ["NTT", "number theoretic transform"],
+      "polynomial multiplication": ["polynomial multiplication", "polynomial multiplier", "negacyclic", "Toom-Cook", "Karatsuba"],
+      "PQC": ["post-quantum", "post quantum", "PQC", "lattice", "LWE", "SIS", "code-based", "isogeny", "hash-based", "Kyber", "Dilithium", "Falcon", "SPHINCS", "ML-KEM", "ML-DSA"]
+    }
+  },
+  "sources": {
+    "iacr_eprint": {
+      "enabled": true,
+      "priority": 5,
+      "rss_candidates": [
+        "https://eprint.iacr.org/rss/rss.xml",
+        "https://eprint.iacr.org/rss",
+        "https://eprint.iacr.org/"
+      ]
+    },
+    "dblp": {
+      "enabled": true,
+      "priority": 3,
+      "queries": [
+        "post quantum cryptography",
+        "lattice cryptography",
+        "PQC NTT",
+        "polynomial multiplication cryptography"
+      ]
+    },
+    "crossref": {
+      "enabled": true,
+      "priority": 2,
+      "queries": [
+        "post-quantum cryptography",
+        "lattice-based cryptography",
+        "polynomial multiplication NTT cryptography"
+      ],
+      "mailto": "126105287@umail.ucc.ie"  
+    },
+    "arxiv": {
+      "enabled": true,
+      "priority": 2,
+      "queries": [
+        "all:\"post-quantum cryptography\" OR all:\"lattice cryptography\"",
+        "all:\"number theoretic transform\" AND all:cryptography",
+        "all:\"polynomial multiplication\" AND all:cryptography"
+      ]
+    },
+    "pubmed": {
+      "enabled": true,
+      "priority": 1,
+      "queries": [
+        "\"post-quantum cryptography\"",
+        "\"quantum-safe cryptography\""
+      ]
+    }
+  },
+  "email": {
+    "enabled": true,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "from": "pengjin250@gmail.com",
+    "to": ["126105287@umail.ucc.ie"],
+    "subject_prefix": "[PQC Digest]"
+  },
+  "llm": {
+    "enabled": true,
+    "provider": "deepseek",
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "model": "deepseek-chat"
+  }
+}

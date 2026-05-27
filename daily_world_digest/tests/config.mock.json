@@ -1,0 +1,22 @@
+{
+  "digest": {
+    "title": "Daily World Digest Test",
+    "language": "zh-CN",
+    "timezone": "Europe/Dublin",
+    "max_events": 5,
+    "history_days": 21,
+    "min_sources_per_event": 1
+  },
+  "email": {
+    "from": "sender@example.com",
+    "to": ["recipient@example.com"],
+    "subject_prefix": "[World Digest Test]"
+  },
+  "feeds": [
+    {
+      "name": "Sample Feed",
+      "url": "tests/sample_world_feed.xml",
+      "region": "world"
+    }
+  ]
+}
